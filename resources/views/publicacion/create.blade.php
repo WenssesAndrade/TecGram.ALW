@@ -4,6 +4,11 @@
     Crear nueva publicacion
 @endsection
 
+
+@push('styles')
+<link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/
+dropzone.min.css" type="text/css"/>
+
 @section('contenido')
 
 <body background="img/lago.jpg">
@@ -15,7 +20,6 @@
                     class="dropzone border-dashed border-2 w-full h-72 rounded flex-col justify-center items-center bg-transparent" 
                     enctype="multipart/form-data">
                 @csrf
-
             </form>
         </div>
 
