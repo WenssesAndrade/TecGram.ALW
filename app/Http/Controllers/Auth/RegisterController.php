@@ -35,6 +35,6 @@ class RegisterController extends Controller
             'username'=>$request->username,
             'password'=>$request->password
         ]);
-        return redirect()->route('muro.index', ['user' => $request->username]);
+        return redirect()->route('muro.index', ['user'=>$request->username]);
     }
 }

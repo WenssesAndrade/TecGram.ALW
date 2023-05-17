@@ -6,6 +6,6 @@
 
 @section('contenido')
     Contenido de pagina principal
+    
     <body background="img/lago.jpg">
-
 @endsection

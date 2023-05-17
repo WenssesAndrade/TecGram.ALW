@@ -6,6 +6,16 @@ use App\Http\Controllers\MuroController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\ImagenController;
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
+|
+*/
 
 Route::get('/', function () {
     return view('principal');
@@ -23,6 +33,8 @@ Route::post('/logout', [LogoutController::class,'store'])->name('logout.store');
 
 Route::get('/{user:username}', [MuroController::class,'index'])->name('muro.index');
 
-Route::get('/muro/create', [MuroController::class,'create'])->name('muro.create');
+Route::get('muro/create', [MuroController::class, 'create'])->name('muro.create');
 
 Route::post('/imagen',[ImagenController::class,'store'])->name('imagen.store');
+
+Route::post('/muro',[MuroController::class,'store'])->name('muro.store');

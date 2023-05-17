@@ -7,9 +7,11 @@ Registrate en TecGram
 
 <body background="img/lago.jpg">
 
+
+
     <div class="flex justify-center items-center gap-10">
         <div class="w-4/12">
-            <img class="rounded-full" src="{{asset ('img/amigos.png')}}" alt="">
+            <img class="rounded-full" src="{{asset ('img/familia.png')}}" alt="">
         </div>
         <div class="w-4/12 bg-white p-6 rounded-lg shadow-lg">
             <form action="{{route('cuenta.store')}}" method="POST">

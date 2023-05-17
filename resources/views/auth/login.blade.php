@@ -4,7 +4,10 @@ Iniciar sesion
 @endsection
 
 @section('contenido')
+
 <body background="img/lago.jpg">
+
+
     <div class="flex justify-center items-center gap-10">
         <div class="w-4/12">
             <img class="rounded-full" src="{{asset ('img/captura.png')}}" alt="">

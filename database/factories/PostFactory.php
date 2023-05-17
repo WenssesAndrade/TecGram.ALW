@@ -13,13 +13,15 @@ class PostFactory extends Factory
      * Define the model's default state.
      *
      * @return array<string, mixed>
+     * 
+     * 
      */
     public function definition(): array
     {
         return [
-            'titulo'=> $this->faker->sentence(5),
+            'titulo'=>$this->faker->sentence(5),
             'descripcion'=>$this->faker->sentence(20),
-            'imagen'=>$this->faker->uuid() . "png",
+            'imagen'=>$this->faker->uuid().".png",
             'user_id'=>$this->faker->randomElement([1,2])
         ];
     }
